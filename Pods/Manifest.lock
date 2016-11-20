@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.1.0)
+  - BTNavigationDropdownMenu (0.4.1)
   - KeychainAccess (3.0.1)
   - Realm (2.1.0):
     - Realm/Headers (= 2.1.0)
@@ -12,17 +13,29 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - BTNavigationDropdownMenu (from `https://github.com/PhamBaTho/BTNavigationDropdownMenu.git`, branch `swift-3.0`)
   - KeychainAccess
   - RealmSwift
   - SDWebImage
 
+EXTERNAL SOURCES:
+  BTNavigationDropdownMenu:
+    :branch: swift-3.0
+    :git: https://github.com/PhamBaTho/BTNavigationDropdownMenu.git
+
+CHECKOUT OPTIONS:
+  BTNavigationDropdownMenu:
+    :commit: 2c08c8579cf7a53ecb3dbf578e6e1034080a9859
+    :git: https://github.com/PhamBaTho/BTNavigationDropdownMenu.git
+
 SPEC CHECKSUMS:
   Alamofire: e266cf991b933498df791e645e0d8ac294492153
+  BTNavigationDropdownMenu: 093f3cbfad1572f2c222bdf8d17584d1e13380d4
   KeychainAccess: 017ea25e313a49eda10bb19b0bb0760fb1edfe1a
   Realm: bc829ad0ef3d4eea70c34cfcc3b1704d18d50df1
   RealmSwift: a4d4abbf0088c337cab5b738054395842e4b3052
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: 143bfa53b18c57b6516c55fd5405f5ff01d5cb8d
+PODFILE CHECKSUM: 89bc9241e2092bc28f684586153ee50a611fcf99
 
 COCOAPODS: 1.1.1

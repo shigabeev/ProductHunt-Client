@@ -10,11 +10,20 @@ import UIKit
 
 class ProductCell: UITableViewCell {
 
+    @IBOutlet weak var Thumbnail: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    @IBOutlet weak var productTitle: UILabel!
+    @IBOutlet weak var productDescription: UILabel!
 
+    @IBOutlet weak var upvotesCount: UILabel!
+    
+    
+    
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

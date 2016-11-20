@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>BTNavigationDropdownMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>KeychainAccess.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,12 +52,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>28E938601F7A2FB20DCB0700E8E93C59</key>
+		<key>18076CB90BD8D7CB0D8DFEDB7DFB5616</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>31B92235A70F3F43B929378B97C4D8AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4BEB560C2FB4B252CD78C36BF1C79C8A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,22 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>A52524E727A97710A55D0EDA55BB7CFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B923ED4B449AD8F59F6BD45E39954993</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C24A3B556FBB5D4784C2574ED725B0A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CB15017611F201914F6D5DE3FF42F736</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DE341703398AE7B740C54AC649FED341</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E2F38DB1C39C1C2C7835E20D36359251</key>
+		<key>F838E1970055613E7F7FABB0F0339998</key>
 		<dict>
 			<key>primary</key>
 			<true/>

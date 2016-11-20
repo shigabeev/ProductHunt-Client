@@ -6,8 +6,16 @@
 //  Copyright © 2016 Ilya Shigabeev. All rights reserved.
 //
 
-import UIKit
+import RealmSwift
 
 class Category: Object {
-
+    dynamic var id = 0
+    dynamic var slug = ""
+    dynamic var name = ""
+    dynamic var color = ""
+    dynamic var item_name = ""
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }

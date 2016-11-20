@@ -10,6 +10,7 @@ target 'ProductHunt Client' do
   pod 'KeychainAccess'
   pod 'SDWebImage'
   pod 'Alamofire'
+  pod 'BTNavigationDropdownMenu', :git => 'https://github.com/PhamBaTho/BTNavigationDropdownMenu.git', :branch => 'swift-3.0'
   
 
   target 'ProductHunt ClientTests' do
