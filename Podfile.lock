@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.1.0)
+  - KeychainAccess (3.0.1)
+  - Realm (2.1.0):
+    - Realm/Headers (= 2.1.0)
+  - Realm/Headers (2.1.0)
+  - RealmSwift (2.1.0):
+    - Realm (= 2.1.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - KeychainAccess
+  - RealmSwift
+  - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: e266cf991b933498df791e645e0d8ac294492153
+  KeychainAccess: 017ea25e313a49eda10bb19b0bb0760fb1edfe1a
+  Realm: bc829ad0ef3d4eea70c34cfcc3b1704d18d50df1
+  RealmSwift: a4d4abbf0088c337cab5b738054395842e4b3052
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+
+PODFILE CHECKSUM: 143bfa53b18c57b6516c55fd5405f5ff01d5cb8d
+
+COCOAPODS: 1.1.1
