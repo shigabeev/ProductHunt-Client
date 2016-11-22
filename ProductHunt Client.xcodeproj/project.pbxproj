@@ -14,6 +14,7 @@
 		799EC1831DDAFF3500DE1381 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799EC1811DDAFF3500DE1381 /* LaunchScreen.storyboard */; };
 		799EC18E1DDAFF3500DE1381 /* ProductHunt_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799EC18D1DDAFF3500DE1381 /* ProductHunt_ClientTests.swift */; };
 		799EC1991DDAFF3500DE1381 /* ProductHunt_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799EC1981DDAFF3500DE1381 /* ProductHunt_ClientUITests.swift */; };
+		79B9FE461DE48351000D0A6A /* DGElasticPullToRefresh in Resources */ = {isa = PBXBuildFile; fileRef = 79B9FE451DE48351000D0A6A /* DGElasticPullToRefresh */; };
 		79F4622E1DE1FA6900D3041C /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4622D1DE1FA6900D3041C /* ProductCell.swift */; };
 		79F462301DE1FBD600D3041C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4622F1DE1FBD600D3041C /* Product.swift */; };
 		79F462321DE1FCF200D3041C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F462311DE1FCF200D3041C /* Category.swift */; };
@@ -60,6 +61,7 @@
 		799EC1941DDAFF3500DE1381 /* ProductHunt ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ProductHunt ClientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		799EC1981DDAFF3500DE1381 /* ProductHunt_ClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHunt_ClientUITests.swift; sourceTree = "<group>"; };
 		799EC19A1DDAFF3500DE1381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79B9FE451DE48351000D0A6A /* DGElasticPullToRefresh */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DGElasticPullToRefresh; path = ../DGElasticPullToRefresh; sourceTree = "<group>"; };
 		79F4622D1DE1FA6900D3041C /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		79F4622F1DE1FBD600D3041C /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		79F462311DE1FCF200D3041C /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				79F4623B1DE2151600D3041C /* View */,
 				79F4623A1DE214CD00D3041C /* Helpers */,
 				799EC17F1DDAFF3500DE1381 /* Assets.xcassets */,
+				79B9FE451DE48351000D0A6A /* DGElasticPullToRefresh */,
 				799EC1841DDAFF3500DE1381 /* Info.plist */,
 			);
 			path = "ProductHunt Client";
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				799EC1831DDAFF3500DE1381 /* LaunchScreen.storyboard in Resources */,
+				79B9FE461DE48351000D0A6A /* DGElasticPullToRefresh in Resources */,
 				799EC1801DDAFF3500DE1381 /* Assets.xcassets in Resources */,
 				799EC17E1DDAFF3500DE1381 /* Main.storyboard in Resources */,
 			);

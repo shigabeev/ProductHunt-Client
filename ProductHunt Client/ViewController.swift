@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 import SDWebImage
 import BTNavigationDropdownMenu
-
+import DGElasticPullToRefresh
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
@@ -28,6 +28,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         tablView.rowHeight = UITableViewAutomaticDimension
         tablView.estimatedRowHeight = 10
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 57/255.0, green: 67/255.0, blue: 89/255.0, alpha: 1.0)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        
         
         //networking
         network = Network()
@@ -47,10 +51,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         network.get_products { result in
             self.products = Util.realm().objects(Product.self)
             self.tablView.reloadData()
-
         }
         print(Util.realm().objects(Category.self).count)
         products = Util.realm().objects(Product.self)
+        
+        let loadingView = DGElasticPullToRefreshLoadingViewCircle()
+        loadingView.tintColor = UIColor(red: 78/255.0, green: 221/255.0, blue: 200/255.0, alpha: 1.0)
+        tablView.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
+            // Add your logic here
+            self?.network.get_products { result in
+                self?.products = Util.realm().objects(Product.self)
+                self?.tablView.reloadData()
+            }
+            print(Util.realm().objects(Category.self).count)
+            self?.products = Util.realm().objects(Product.self)
+
+            // Do not forget to call dg_stopLoading() at the end
+            self?.tablView.dg_stopLoading()
+            }, loadingView: loadingView)
+        tablView.dg_setPullToRefreshFillColor(UIColor(red: 57/255.0, green: 67/255.0, blue: 89/255.0, alpha: 1.0))
+        tablView.dg_setPullToRefreshBackgroundColor(tablView.backgroundColor!)
+
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,6 +93,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.imageView?.sd_setImage(with: URL(string: products[indexPath.row].thumbnail!.image_url)!)
         return cell
     }
+    
     
 }
 
