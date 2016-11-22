@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         print(Util.realm().objects(Category.self).count)
         products = Util.realm().objects(Product.self)
         
-        let items = ["Tech", "Games", "Trending", "Nearest", "Top Picks"]
+        let items = ["Tech", "Games", "Podcasts", "Books", "bots"]
         let menuView = BTNavigationDropdownMenu(title: items[0], items: items as [AnyObject])
         self.navigationItem.titleView = menuView
         menuView.didSelectItemAtIndexHandler = {[weak self] (indexPath: Int) -> () in
