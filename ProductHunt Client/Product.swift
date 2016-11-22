@@ -8,7 +8,6 @@
 
 import RealmSwift
 
-
 class Product: Object {
     dynamic var id:Int = 0
     dynamic var name = ""

@@ -9,7 +9,7 @@ import RealmSwift
 
 class Util: Object {
 
-    static let config  = Realm.Configuration(schemaVersion: 3, migrationBlock: {_,_ in })
+    static let config  = Realm.Configuration(schemaVersion: 4, migrationBlock: {_,_ in })
     
     static func  realm() -> Realm{
         return try! Realm(configuration: Util.config)
