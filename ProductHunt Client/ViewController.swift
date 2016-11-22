@@ -34,6 +34,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         network.get_categories { result in
             print (result)
             self.categories = Util.realm().objects(Category.self)
+            let items = Array(self.categories).map{$0.name}
+            let menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, containerView: self.navigationController!.view, title: "Tech", items: items as [AnyObject])
+            self.navigationItem.titleView = menuView
+            menuView.didSelectItemAtIndexHandler = {[weak self] (indexPath: Int) -> () in
+                print("Did select item at index: \(indexPath)")
+                self?.selectedCellLabel.text = items[indexPath]
+            }
         }
         print(Util.realm().objects(Category.self).count)
         
@@ -44,25 +51,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         print(Util.realm().objects(Category.self).count)
         products = Util.realm().objects(Product.self)
-        
-//        let items = ["Tech", "Games", "Podcasts", "Books", "bots"]
-//        let menuView = BTNavigationDropdownMenu(title: items[0], items: items as [AnyObject])
-//        self.navigationItem.titleView = menuView
-//        menuView.didSelectItemAtIndexHandler = {[weak self] (indexPath: Int) -> () in
-//            print("Did select item at index: \(indexPath)")
-//            self?.selectedCellLabel.text = items[indexPath]
-//        }
-        
-        
-        //Dropdown menu
-        let items = Array(categories).map{$0.name}
-        let menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, containerView: self.navigationController!.view, title: "Tech", items: items as [AnyObject])
-        self.navigationItem.titleView = menuView
-        menuView.didSelectItemAtIndexHandler = {[weak self] (indexPath: Int) -> () in
-            print("Did select item at index: \(indexPath)")
-            self?.selectedCellLabel.text = items[indexPath]
-        }
-        
     }
 
     override func didReceiveMemoryWarning() {
